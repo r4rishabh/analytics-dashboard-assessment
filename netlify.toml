@@ -1,6 +1,7 @@
 [build]
-  # This is the directory to change to before starting a build.
+  # Set the base directory to navigate to the parent folder.
   base    = "analytics-dashboard-assessment"
-  # NOTE: This is where we will look for package.json/.nvmrc/etc, not root.
-  # This is the directory that you are publishing from (relative to root of your repo)
-  publish = "data-to-visualize"
+  # Specify the directory with the React app to publish.
+  publish = "data-to-visualize/build"
+  # Define the command to build the React app.
+  command = "npm run build"
